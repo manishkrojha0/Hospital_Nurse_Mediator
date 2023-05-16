@@ -32,11 +32,36 @@ Hospital Nurse Mediator is a Django-based web application that facilitates commu
 5. Apply database migrations:
    ```bash
    python manage.py migrate
+6. Test cases
+   ```bash
+   python manage.py test
+   
+7. Deployment
+   1. Deployed the project on render.
+   2. Deployment base url -  ``` bash https://mydoc.onrender.com
+   3. Refer the Postman API collections to understand the apis.
+ 
+# Hospital Nurse Mediator API Documentation
+## Introduction
+- The Hospital Nurse Mediator API provides endpoints for managing users in a healthcare system, including hospitals, nurses, and mediators. This documentation      describes the available API endpoints, their request/response formats, and authentication requirements.
+
+# Base URL
+- The base URL for all API endpoints is: https://api.example.com
+
+# Authentication
+- Authentication is required to access most of the API endpoints. The API uses token-based authentication. To authenticate, include the token in the Authorization header of each request.
+
+``` bash
+   Authorization: Bearer <access_token>  
+   ````
+# Postman Collections 
+- curl this url in your postman or simply paste this url - https://manishkrojha0.pythonanywhere.com/url-hasher/click/9xq57zqg/
+   
 # Acknowledgements
-  Django
-  Django REST Framework
-  Simple JWT
-  PostgreSQL
+  ## Django
+  ## Django REST Framework
+  ## Simple JWT
+  ## PostgreSQL
 # Contact
   For any questions, issues, or inquiries, please contact manishkrojha0@gmail.com.
 
