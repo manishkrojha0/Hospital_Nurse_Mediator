@@ -58,12 +58,32 @@ Hospital Nurse Mediator is a Django-based web application that facilitates commu
    ````
 # Postman Collections 
 - curl this url in your postman or simply paste this url - https://rb.gy/co6c2
+
+# Dockerisation of this project
+- Follow these steps to dockerise.
+  1. Docker: Install Docker
+  2. Docker Compose: Install Docker Compose
+  3. Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/manishkrojha0/Hospital_Nurse_Mediator.git
+  4. Navigate to the project directory:
+     ```bash
+     cd Hospital_Nurse_Mediator
+  5. Build the Docker image:
+     ```bash
+     docker build -t hospital-nurse-mediator .
+  6. Run the Docker container:
+     ``bash
+     docker run -d -p 8000:8000 hospital-nurse-mediator
+  7. Access the application:
+     Open your web browser and visit http://localhost:8000 to access the Hospital Nurse Mediator application.
    
 # Acknowledgements
-  ## Django
-  ## Django REST Framework
-  ## Simple JWT
-  ## PostgreSQL
+  - Django
+  - Django REST Framework
+  - Simple JWT
+  - PostgreSQL
+
 # Contact
   For any questions, issues, or inquiries, please contact manishkrojha0@gmail.com.
 
