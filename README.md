@@ -73,7 +73,7 @@ Hospital Nurse Mediator is a Django-based web application that facilitates commu
      ```bash
      docker build -t hospital-nurse-mediator .
   6. Run the Docker container:
-     ``bash
+     ```bash
      docker run -d -p 8000:8000 hospital-nurse-mediator
   7. Access the application:
      Open your web browser and visit http://localhost:8000 to access the Hospital Nurse Mediator application.
