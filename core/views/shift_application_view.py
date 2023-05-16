@@ -34,7 +34,6 @@ class ShiftApplicationAPIView(APIView):
         }
         serializer = ShiftApplicationSerializer(data=data)
 
-
         if serializer.is_valid():
             application = serializer.save(shift=shift, nurse=request.user)    # this is being done by nurses
             return Response(serializer.data, status=status.HTTP_201_CREATED)
