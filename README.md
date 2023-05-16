@@ -17,16 +17,20 @@ Hospital Nurse Mediator is a Django-based web application that facilitates commu
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/manishkrojha0/hospital-nurse-mediator.git](https://github.com/manishkrojha0/Hospital_Nurse_Mediator.git)
+   git clone https://github.com/manishkrojha0/Hospital_Nurse_Mediator.git
 
-2. Navigate to the project directory: 
+2. Navigate to the project directory:
+   ```bash 
    cd Hospital_Nurse_Mediator
 3. Create and activate a virtual environment:
+   ```bash
    python -m venv myenv
    source myenv/bin/activate or myenv/Scripts/activate
 4. Install the project dependencies:
+   ```bash
     pip install -r requirements.txt
 5. Apply database migrations:
+   ```bash
    python manage.py migrate
 # Acknowledgements
   Django
