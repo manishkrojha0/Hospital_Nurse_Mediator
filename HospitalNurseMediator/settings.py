@@ -73,6 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'HospitalNurseMediator.urls'
@@ -172,3 +173,5 @@ AUTHENTICATION_BACKENDS = [
     'core.acl.custom_user_backend.CustomUserBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
