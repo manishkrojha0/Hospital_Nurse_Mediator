@@ -1,0 +1,11 @@
+version: '3.10.11'
+services:
+ app:
+  build: .
+  volumes:
+   - .:/hospital_nurse_mediator
+  ports:
+   - 8000:8000
+  image: app:hospital_nurse_mediator
+  container_name: hospital_nurse_mediator_app
+  command: python manage.py runserver 0.0.0.0:8000
